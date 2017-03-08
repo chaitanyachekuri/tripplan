@@ -1,0 +1,26 @@
+{
+  "name": "tripplan",
+  "version": "1.0.0",
+  "description": "A website that helps you to plan your road trips",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanyachekuri/tripplan.git"
+  },
+  "author": "csk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaitanyachekuri/tripplan/issues"
+  },
+  "homepage": "https://github.com/chaitanyachekuri/tripplan#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "googlemaps": "^1.12.0",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7"
+  }
+}

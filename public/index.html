@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Under Dev</title>
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--angular js-->
+    <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-animate.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
+    <!--bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!--local styles-->
+    <link href="css/index.css" rel="stylesheet">
+    <!--local js-->
+    <script src="js/index.js"></script>
+</head>
+<body ng-app="roadApp" ng-controller="roadCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h1>Under Production</h1>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <form name="inputFields">
+                        <p>
+                        <label for="originRoute">
+                            Origin:
+                            <input type="text" name="originRoute" id="originRoute" class="form-control" title="Origin" ng-model="Route.origin" required="required" >
+                        </label>
+                            </p>
+                        <p>
+                        <label for="originRoute">
+                            Destination:
+                            <input type="text" name="originDestination" id="originDestination" class="form-control" title="Destination" ng-model="Route.destination" required="required" >
+                        </label>
+                        </p>
+                        <button class="btn btn-lg" ng-click="submit()" ng-disabled="(inputFields.originRoute.$invalid) || (inputFields.originDestination.$invalid)">Get the Route!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
